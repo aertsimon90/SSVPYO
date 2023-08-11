@@ -31,10 +31,25 @@ class ssvpyo:
 		try:
 			c = c.split()
 			if c[0] == "cf":
-				title(f"Filename: {c[1]}")
-				content = editfile(c[1])
-				self.files[c[1]] = content
-				title(f"File Created")
+				if c[1] == "":
+					title("Name not found")
+				elif c[1] == ".":
+					title("Name error")
+				elif c[1] == "/":
+					title("Name error")
+				elif c[1] == "*":
+					title("Name error")
+				elif c[1] == "'":
+					title("Name error")
+				elif c[1] == '"':
+					title("Name error")
+				elif "/" in c[1]:
+					title("Invalid char: /")
+				else:
+					title(f"Filename: {c[1]}")
+					content = editfile(c[1])
+					self.files[c[1]] = content
+					title(f"File Created")
 			elif c[0] == "rf":
 				title(f"Filename: {c[1]}")
 				if c[1] in self.files:
