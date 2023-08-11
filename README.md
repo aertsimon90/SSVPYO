@@ -1,7 +1,7 @@
 # SSVPYO
 Simon Scap's Virtual Python OS (SSVPYO)
 
-Supported CMDs: Linux/MacOSTermux
+Supported CMDs: Linux/MacOS/Termux
 
 # How To İnstall Your Device
 <h3>↓ Copy and paste your cmd ↓</h3>
@@ -33,3 +33,17 @@ git clone https://github.com/aertsimon90/SSVPYO
 cd SSVPYO
 
 python3 os.py
+
+<h4> For MacOS </h4>
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+brew install git
+
+brew install python
+
+git clone https://github.com/aertsimon90/SSVPYO
+
+cd SSVPYO
+
+python os.py
