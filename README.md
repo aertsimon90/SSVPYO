@@ -47,4 +47,4 @@ git clone https://github.com/aertsimon90/SSVPYO
 cd SSVPYO
 
 python os.py
-[Show Politics](https://github.com/aertsimon90/politics/blob/main/README.md)
+# [Show Politics](https://github.com/aertsimon90/politics/blob/main/README.md)
